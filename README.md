@@ -2,11 +2,12 @@
 
 ## Overview
 This project is an end-to-end data engineering platform designed to demonstrate real-world skills in:
-- Batch and streaming ingestion
-- Data lakehouse architecture (Bronze, Silver, Gold)
-- Data quality checks
-- Real-time dashboards
-- Log analytics
+- Batch + streaming ingestion (Kafka)
+- Lakehouse (Delta) with Bronze → Silver → Gold
+- Orchestration (Airflow)
+- Analytics storage (PostgreSQL)
+- Data quality (Great Expectations)
+- Dashboards (Streamlit, Grafana) & log analytics (Kibana)
 
 ## Tech Stack
 - Apache Kafka
@@ -17,3 +18,13 @@ This project is an end-to-end data engineering platform designed to demonstrate 
 - Grafana, Kibana, Streamlit
 
 ## Folder Structure
+- **infra/** – Docker Compose & infra configs  
+- **airflow/** – DAGs, logs, plugins  
+- **producers/** – batch & streaming data producers  
+- **spark_jobs/** – Spark batch/streaming jobs  
+- **delta_store/** – local Delta tables (gitignored)  
+- **postgres_schema/** – SQL schema & views  
+- **ge/** – Great Expectations configs  
+- **dashboards/** – Streamlit & Grafana assets  
+- **tests/** – unit tests  
+- **docs/** – diagrams & interview notes

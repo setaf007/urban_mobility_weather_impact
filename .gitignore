@@ -1,0 +1,17 @@
+.env
+# Python
+__pycache__/
+*.pyc
+
+# Airflow
+airflow/logs/
+
+# Data artifacts
+delta_store/
+data/
+checkpoints/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
